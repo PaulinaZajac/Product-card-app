@@ -1,0 +1,82 @@
+body {
+  background-color: #f2eae2;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 1440px;
+}
+
+.product-container {
+  border-radius: 0.5rem;
+  display: flex;
+  width: 70vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.product-image {
+  display: flex;
+}
+
+.perfume-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.perfume-title {
+  font-family: 'Fraunces', serif;
+}
+
+.perfume-description {
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 300;
+}
+
+.perfume-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  color: #3d8168;
+}
+
+.perfume-promo {
+  font-size: 15px;
+  color: #353535;
+  text-decoration: line-through;
+}
+
+@media (max-width: 800px) {
+  .product-container {
+    flex-direction: column;
+    margin: 1rem;
+    width: 100vw;
+  }
+}
+
+.product-image {
+  flex-direction: column;
+  height: 30vh;
+}
+
+.product-description {
+  background-color: white;
+  padding: 5%;
+  height: 70vh;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #3d8168;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+}
