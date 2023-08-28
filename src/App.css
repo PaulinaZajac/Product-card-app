@@ -26,15 +26,23 @@ body {
 .perfume-heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  color: #6c7289;
+  letter-spacing: 0.3rem;
+  font-size: 0.65rem;
+  height: 2%;
 }
 .perfume-title {
   font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  height: 15%;
 }
 
 .perfume-description {
   font-family: 'Montserrat', sans-serif;
-
   font-weight: 300;
+  font-size: 0.9rem;
+  color: #6c7289;
+  height: 10%;
 }
 
 .perfume-price {
@@ -42,14 +50,16 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 200px;
+  height: 18%;
   font-family: 'Fraunces', serif;
   font-size: 30px;
   color: #3d8168;
 }
 
 .perfume-promo {
-  font-size: 15px;
-  color: #353535;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #9094a7;
   text-decoration: line-through;
 }
 
