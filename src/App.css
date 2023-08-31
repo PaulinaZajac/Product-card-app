@@ -13,14 +13,22 @@ body {
 
 .product-container {
   border-radius: 0.5rem;
+  background-color: white;
   display: flex;
-  width: 70vw;
+  width: 60vw;
   height: 70vh;
   overflow: hidden;
 }
 
 .product-image {
+  width: 30vw;
   display: flex;
+
+  justify-content: center;
+}
+
+.product-description {
+  padding: 8%;
 }
 
 .perfume-heading {
@@ -29,20 +37,17 @@ body {
   color: #6c7289;
   letter-spacing: 0.3rem;
   font-size: 0.65rem;
-  height: 2%;
 }
 .perfume-title {
   font-family: 'Fraunces', serif;
-  font-size: 2rem;
-  height: 15%;
+  font-size: 1.8rem;
+  height: 25%;
 }
 
 .perfume-description {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #6c7289;
-  height: 10%;
 }
 
 .perfume-price {
@@ -50,17 +55,27 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 200px;
-  height: 18%;
+  height: 25%;
   font-family: 'Fraunces', serif;
   font-size: 30px;
   color: #3d8168;
 }
 
 .perfume-promo {
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 300;
   color: #9094a7;
   text-decoration: line-through;
+  margin-left: -5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  height: 6vh;
+  background-color: #3d8168;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 800px) {
@@ -68,25 +83,33 @@ body {
     flex-direction: column;
     margin: 1rem;
     width: 100vw;
+    min-width: 320px;
+    height: 90vh;
+    overflow: hidden;
   }
-}
 
-.product-image {
-  flex-direction: column;
-  height: 30vh;
-}
+  .product-image {
+    width: 100vw;
+    height: 15vh;
+    min-width: 320px;
+    margin-top: 20vh;
+    flex-direction: column;
+  }
 
-.product-description {
-  background-color: white;
-  padding: 5%;
-  height: 70vh;
-}
+  .product-description {
+    background-color: #ffffff;
+    height: 90vh;
+  }
 
-.add-to-cart-button {
-  width: 100%;
-  height: 2.5rem;
-  background-color: #3d8168;
-  color: #ffffff;
-  border: none;
-  border-radius: 0.5rem;
+  .perfume-title {
+    height: 15%;
+  }
+
+  .perfume-description {
+    height: 15%;
+  }
+
+  .perfume-price {
+    height: 20%;
+  }
 }
