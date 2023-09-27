@@ -78,6 +78,11 @@ body {
   border-radius: 0.5rem;
 }
 
+.add-to-cart-button:hover {
+  background-color: #1a4032;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .product-container {
     flex-direction: column;
